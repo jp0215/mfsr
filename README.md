@@ -55,10 +55,6 @@ Modify the parameters in several files in the /pretrain_CNN directory, and then 
 python ./pretrain_CNN/train.py
 ```
 
-```shell
-nohup python ./pretrain_CNN/train.py > ffhq_train.log &
-```
-
 The CNN predictions will be written to the specified path, 
 note that the path needs to be specified as the previously generated **dataset/xxx/sr_[lr]_[hr]**.
 
