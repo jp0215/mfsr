@@ -11,7 +11,6 @@ Once the paper is accepted, we will refine the code and release it as soon as po
 
 ```shell
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
-pip install -r requirements.txt
 ```
 
 ### Data Prepare
@@ -19,7 +18,7 @@ pip install -r requirements.txt
 Download the dataset and prepare it in **LMDB** or **PNG** format using script.
 
 ```shell
-python data/prepare_data.py  --path ../datasets/DF2Ktest  --out ./dataset/DF2Ktest --size 40,160
+python data/prepare_data.py  --path [data_path]  --out [result_path] --size 40,160
 ```
 
 The obtained data is organized as follows:
@@ -55,7 +54,6 @@ Modify the parameters in several files in the /pretrain_CNN directory, and then 
 ```shell
 python ./pretrain_CNN/train.py
 ```
-
 
 ```shell
 nohup python ./pretrain_CNN/train.py > ffhq_train.log &
