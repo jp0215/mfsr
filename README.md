@@ -68,8 +68,6 @@ note that the path needs to be specified as the previously generated **dataset/x
 python sr.py -p train -c [config file]
 ```
 
-# 修改学习率
-
 ### Test/Evaluation
 
 ```shell
